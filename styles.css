@@ -1,40 +1,103 @@
 body {
-	background-image: linear-gradient(rgb(255, 255, 255), rgb(255, 255, 255));
+	background-image: linear-gradient(rgb(0, 0, 0), rgb(255, 255, 255));
 	font-family: "Lato", sans-serif;
-	padding: 10px;
+	margin-top: 0;
 }
-
+h2 {
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	font-size: 1.1rem;
+	line-height: 16px;
+	/* padding: 0 36px 0 36px; */
+	margin-top: 16px;
+}
+h5 {
+	margin: 0 auto;
+}
 header {
-	width: fit-content;
+	width: 100%;
+	max-width: 600px;
 	margin: auto;
-
+	position: static;
 	border: 1px solid orange;
 }
 
+span {
+	font-size: 0.25rem;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	color: #b2b2b2;
+}
+
 main {
-	margin-top: -10px;
-	margin: auto;
+	position: relative;
+	/* alterar quando for fazer o overflow do header	 */
+	margin: -6px auto;
 	max-width: 600px;
 	background-color: #adff2f;
 }
-.um {
+.main_news {
 	width: fit-content;
-	margin: auto;
+	margin: 0 36px 0 36px;
 	border: 1px solid #adff2f;
 	justify-items: center;
 }
-.um img {
-	margin: auto;
+.main_news img {
+	background-color: white;
+	/* padding: 0 36px 0 36px; */
 }
 
-.dois {
+.sub_news {
 	border: 1px solid red;
 	display: flex;
 	flex-direction: row;
+	gap: 10px;
 	flex-wrap: wrap;
 	justify-content: center;
+	padding-top: 16px;
+	margin-top: 20px;
 }
 
-.dois img {
+.sub_news img {
+	width: 100%;
+	height: 190px;
+}
+
+.baseline {
+	margin-top: 4px;
+	width: 50%;
+	height: 4px;
+	background: linear-gradient(to right, #e02d5e, #6a5ba3);
+}
+
+footer {
+	width: 100%;
+	max-width: 600px;
+	justify-content: center;
+	margin: 10px auto;
+}
+
+.newpost {
+	border: solid 2px blue;
+	max-width: 260px;
+	padding-bottom: 16px;
+}
+
+h3 {
+	margin-top: 4px;
 	padding-right: 10px;
+	font-size: 1rem;
+	margin-right: 50px;
+	line-height: 1.2rem;
+}
+
+footer p {
+	margin-top: 12px;
+	text-align: center;
+	font-size: 8px;
+	line-height: 4px;
+}
+
+@media (max-width: 600px) {
+	main {
+		background-color: blue;
+	}
 }
