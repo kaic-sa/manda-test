@@ -1,9 +1,40 @@
 body {
-	text-align: center;
-	height: 1000px;
+	background-image: linear-gradient(rgb(255, 255, 255), rgb(255, 255, 255));
+	font-family: "Lato", sans-serif;
+	padding: 10px;
 }
 
-body {
-	background-image: linear-gradient(rgb(30, 28, 28), rgb(255, 255, 255));
-	font-family: "Lato", sans-serif;
+header {
+	width: fit-content;
+	margin: auto;
+
+	border: 1px solid orange;
+}
+
+main {
+	margin-top: -10px;
+	margin: auto;
+	max-width: 600px;
+	background-color: #adff2f;
+}
+.um {
+	width: fit-content;
+	margin: auto;
+	border: 1px solid #adff2f;
+	justify-items: center;
+}
+.um img {
+	margin: auto;
+}
+
+.dois {
+	border: 1px solid red;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.dois img {
+	padding-right: 10px;
 }
