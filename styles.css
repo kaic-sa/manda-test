@@ -1,3 +1,9 @@
+html,
+body {
+	margin: 0;
+	padding: 0;
+}
+
 body {
 	background-image: linear-gradient(rgb(0, 0, 0), rgb(255, 255, 255));
 	font-family: "Lato", sans-serif;
@@ -10,13 +16,11 @@ h2 {
 	/* padding: 0 36px 0 36px; */
 	margin-top: 16px;
 }
-h5 {
-	margin: 0 auto;
-}
+
 header {
-	width: 100%;
+	width: 40rem;
 	max-width: 600px;
-	margin: auto;
+	margin: 0 auto;
 	position: static;
 	border: 1px solid orange;
 }
@@ -31,17 +35,20 @@ main {
 	position: relative;
 	/* alterar quando for fazer o overflow do header	 */
 	margin: -6px auto;
+
 	max-width: 600px;
 	background-color: #adff2f;
 }
 .main_news {
 	width: fit-content;
 	margin: 0 36px 0 36px;
-	border: 1px solid #adff2f;
+	border: 1px solid #b61a15;
 	justify-items: center;
+	background-color: #d52fff;
 }
 .main_news img {
 	background-color: white;
+	width: 33rem;
 	/* padding: 0 36px 0 36px; */
 }
 
@@ -80,14 +87,15 @@ footer {
 	max-width: 260px;
 	padding-bottom: 16px;
 }
-
-h3 {
+/* 
+.sub_news h3,
+h5 {
 	margin-top: 4px;
 	padding-right: 10px;
 	font-size: 1rem;
 	margin-right: 50px;
 	line-height: 1.2rem;
-}
+} */
 
 footer p {
 	margin-top: 12px;
@@ -99,5 +107,28 @@ footer p {
 @media (max-width: 600px) {
 	main {
 		background-color: blue;
+		justify-content: center;
+	}
+	.main_news {
+		margin: 0;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+
+		width: 100%;
+		background-color: #6a5ba3;
+	}
+
+	.main_news h5 {
+		margin: 0 1.5rem 1rem 1.5rem;
+	}
+
+	.main_news .baseline {
+		position: relative;
+		align-self: flex-start;
+	}
+
+	footer p {
+		margin-left: 200px;
 	}
 }
