@@ -182,7 +182,12 @@ h5 {
 	}
 }
 
-@media (min-width: 375px) and (max-width: 414px) {
+@media (min-width: 374px) and (max-width: 415px) {
+	html,
+	body {
+		width: 100%;
+		overflow-x: hidden;
+	}
 	header img {
 		width: 100vw;
 		height: 8rem;
@@ -190,14 +195,43 @@ h5 {
 	header {
 		max-width: fit-content;
 	}
+	main {
+		width: 100%;
+		margin-left: auto;
+		margin-right: auto;
+	}
 	.main_news img {
 		width: 100vw;
 		height: 12rem;
 	}
 
-	main {
-		width: 100%;
-		margin-left: auto;
-		margin-right: auto;
+	.main_news h2 {
+		line-height: 20px;
+		padding-left: 24px;
+		margin-left: 12px;
+		padding-right: 24px;
+		font-size: 1.2rem;
+		text-align: left;
+	}
+	h5 {
+		text-align: left;
+	}
+	.main_news span {
+		width: fit-content;
+	}
+
+	.main_news .baseline {
+		width: 50%;
+		margin-left: -230px;
+	}
+
+	footer {
+		overflow: hidden;
+	}
+
+	footer img {
+		margin-left: -50px;
+		width: 130%;
+		height: 110%;
 	}
 }
