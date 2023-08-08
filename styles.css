@@ -181,3 +181,23 @@ h5 {
 		margin-right: auto;
 	}
 }
+
+@media (min-width: 375px) and (max-width: 414px) {
+	header img {
+		width: 100vw;
+		height: 8rem;
+	}
+	header {
+		max-width: fit-content;
+	}
+	.main_news img {
+		width: 100vw;
+		height: 12rem;
+	}
+
+	main {
+		width: 100%;
+		margin-left: auto;
+		margin-right: auto;
+	}
+}
