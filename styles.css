@@ -232,7 +232,7 @@ h5 {
 	}
 }
 
-@media (min-width: 461px) {
+@media (max-width: 461px) {
 	html {
 		width: max-content;
 	}
