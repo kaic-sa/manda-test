@@ -1,20 +1,20 @@
 html,
 body {
-	margin: 0;
-	padding: 0;
+	padding: 12px;
 }
 
 body {
-	background-image: linear-gradient(rgb(0, 0, 0), rgb(255, 255, 255));
+	background-color: #f2f2f2;
 	font-family: "Lato", sans-serif;
-	margin-top: 0;
 }
 h2 {
-	font-family: Verdana, Geneva, Tahoma, sans-serif;
-	font-size: 1.1rem;
+	font-family: Arial, Helvetica, sans-serif;
+	letter-spacing: 0.5px;
+	font-size: 1.3rem;
 	line-height: 16px;
-	/* padding: 0 36px 0 36px; */
-	margin-top: 16px;
+
+	margin-top: 14px;
+	margin-bottom: 0;
 }
 
 header {
@@ -26,7 +26,7 @@ header {
 }
 
 span {
-	font-size: 0.25rem;
+	font-size: 0.75rem;
 	font-family: Verdana, Geneva, Tahoma, sans-serif;
 	color: #b2b2b2;
 }
@@ -68,17 +68,33 @@ main {
 	height: 190px;
 }
 
-.baseline {
+.main_news .baseline {
 	margin-top: 4px;
 	width: 50%;
 	height: 4px;
 	background: linear-gradient(to right, #e02d5e, #6a5ba3);
 }
 
+#post_one {
+	margin-top: 4px;
+	width: 50%;
+	height: 4px;
+	background: linear-gradient(to right, #76c4cf, #6760a6);
+}
+
+#post_two {
+	margin-top: 4px;
+	width: 50%;
+	height: 4px;
+	background: linear-gradient(to right, #74c7cd, #3ab38a);
+}
+
 footer {
 	width: 100%;
 	max-width: 600px;
-	justify-content: center;
+	display: flex;
+	flex-direction: column;
+	justify-items: center;
 	margin: 10px auto;
 }
 
@@ -87,6 +103,7 @@ footer {
 	max-width: 260px;
 	padding-bottom: 16px;
 }
+
 /* 
 .sub_news h3,
 h5 {
@@ -97,14 +114,33 @@ h5 {
 	line-height: 1.2rem;
 } */
 
-footer p {
+h5 {
+	padding-right: 12px;
+	margin-top: 4px;
+	margin-bottom: 12px;
+}
+
+.copyright p {
 	margin-top: 12px;
 	text-align: center;
-	font-size: 8px;
+	font-size: 0.75rem;
 	line-height: 4px;
 }
 
-@media (max-width: 600px) {
+.copyright {
+	margin-left: auto;
+	margin-right: auto;
+	width: 100%;
+	padding: 10px;
+}
+
+@media (max-width: 640px) {
+	html,
+	body {
+		margin: 0;
+		padding: 0;
+	}
+
 	main {
 		background-color: blue;
 		justify-content: center;
@@ -114,21 +150,34 @@ footer p {
 		display: flex;
 		flex-direction: column;
 		align-items: center;
-
 		width: 100%;
 		background-color: #6a5ba3;
 	}
 
+	h2 {
+		margin-left: -20px;
+		margin-bottom: 6px;
+	}
 	.main_news h5 {
 		margin: 0 1.5rem 1rem 1.5rem;
+		padding-right: 16px;
+		padding-left: 12px;
+	}
+
+	.main_news span {
+		padding-left: 12px;
+		width: 50%;
+		margin-left: -240px;
 	}
 
 	.main_news .baseline {
-		position: relative;
-		align-self: flex-start;
+		width: 50%;
+		margin-left: -230px;
 	}
 
-	footer p {
-		margin-left: 200px;
+	.copyright p {
+		width: 100%;
+		margin-left: auto;
+		margin-right: auto;
 	}
 }
