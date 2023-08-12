@@ -3,6 +3,7 @@
 	lang="en"
 	xmlns="http://www.w3.org/1999/xhtml"
 	xmlns:o="urn:schemas-microsoft-com:office:office"
+	;
 >
 	<head>
 		<meta charset="utf-8" />
@@ -18,39 +19,28 @@
 			p {
 				font-family: Arial, sans-serif;
 			}
-			@media screen and (max-width: 530px) {
-				.col-lge {
-					max-width: 100% !important;
-				}
-			}
 
 			@media screen and (max-width: 531px) {
 				.col-sml {
 					max-width: 100%;
+					margin: 0 auto 16px auto;
 				}
 				.col-sml img {
 					max-width: 260px;
-
+					width: 50%;
 					height: auto;
 					border: #b33a3a 2px solid;
 				}
 				.quebra {
 					flex-direction: row;
-					gap: 10px;
+
 					flex-wrap: wrap;
-					justify-content: center;
+					justify-items: center;
 				}
 			}
 		</style>
 	</head>
-	<body
-		style="
-			margin: 0;
-			padding: 0;
-			word-spacing: normal;
-			background-color: #939297;
-		"
-	>
+	<body style="margin: 0; padding: 0; word-spacing: normal">
 		<div
 			role="article"
 			aria-roledescription="email"
@@ -62,7 +52,7 @@
 				style="width: 100%; border: none; border-spacing: 0"
 			>
 				<tr>
-					<td align="center" style="padding: 0">
+					<td align="center" style="padding: 0; background-color: #f2f2f2">
 						<table
 							role="presentation"
 							style="
@@ -99,26 +89,27 @@
 										font-size: 24px;
 										line-height: 28px;
 										font-weight: bold;
-										background-color: white;
+										background-color: #ffffff;
 										margin: 0 auto;
 									"
 								>
-									<img
-										src="./src/main_image_1.png"
-										alt=""
-										style="
-											margin-left: auto;
-											margin-right: auto;
-											margin-top: -12px;
-											width: 100%;
-											max-width: 530px;
-											height: auto;
-											display: block;
-											border: none;
-											text-decoration: none;
-											color: #363636;
-										"
-									/>
+									<a href="#" title="main_image_1"
+										><img
+											src="./src/main_image_1.png"
+											alt=""
+											style="
+												margin-left: auto;
+												margin-right: auto;
+												margin-top: -12px;
+												width: 100%;
+												max-width: 530px;
+												height: auto;
+												display: block;
+												border: none;
+												text-decoration: none;
+												color: #363636;
+											"
+									/></a>
 								</td>
 							</tr>
 							<tr>
@@ -126,7 +117,7 @@
 									style="
 										padding: 16px 35px 0 35px;
 										height: auto;
-										background-color: #f5f5f5;
+										background-color: #ffffff;
 									"
 								>
 									<h1
@@ -182,7 +173,7 @@
 										padding: 35px;
 
 										font-size: 0;
-										background-color: #efeef0;
+										background-color: #ffffff;
 									"
 								>
 									<div
@@ -199,16 +190,18 @@
 											color: #363636;
 										"
 									>
-										<img
-											src="./src/sub_image_1.png"
-											alt=""
-											style="
-												width: 100%;
-												height: 190px;
+										<a href="" title="sub_image_1"
+											><img
+												src="./src/sub_image_1.png"
+												alt=""
+												style="
+													width: 100%;
+													height: 190px;
 
-												margin-bottom: 12px;
-											"
-										/>
+													margin-bottom: 12px;
+												"
+										/></a>
+
 										<h2
 											style="
 												margin-top: 0px;
@@ -249,16 +242,18 @@
 											color: #363636;
 										"
 									>
-										<img
-											src="./src/sub_image_2.png"
-											alt=""
-											style="
-												width: 100%;
-												height: 190px;
+										<a href="" title="sub_image_2"
+											><img
+												src="./src/sub_image_2.png"
+												alt=""
+												style="
+													width: 100%;
+													height: 190px;
 
-												margin-bottom: 12px;
-											"
-										/>
+													margin-bottom: 12px;
+												"
+										/></a>
+
 										<h2
 											style="
 												margin-top: 0px;
@@ -287,46 +282,6 @@
 											"
 										></div>
 									</div>
-									<!-- <div
-										class="col-lge"
-										style="
-											display: inline-block;
-											width: 100%;
-											max-width: 395px;
-											vertical-align: top;
-											padding-bottom: 20px;
-											font-family: Arial, sans-serif;
-											font-size: 16px;
-											line-height: 22px;
-											color: #363636;
-										"
-									>
-										<p style="margin-top: 0; margin-bottom: 12px">
-											Nullam mollis sapien vel cursus fermentum. Integer
-											porttitor augue id ligula facilisis pharetra. In eu ex et
-											elit ultricies ornare nec ac ex. Mauris sapien massa,
-											placerat non venenatis et, tincidunt eget leo.
-										</p>
-
-										<p style="margin: 0">
-											<a
-												href="https://example.com/"
-												style="
-													background: #ff3884;
-													text-decoration: none;
-													padding: 10px 25px;
-													color: #ffffff;
-													border-radius: 4px;
-													display: inline-block;
-													mso-padding-alt: 0;
-													text-underline-color: #ff3884;
-												"
-												><span style="mso-text-raise: 10pt; font-weight: bold"
-													>Claim yours now</span
-												></a
-											>
-										</p>
-									</div> -->
 								</td>
 							</tr>
 							<tr>
@@ -337,7 +292,7 @@
 										margin-bottom: 100px;
 										padding-bottom: 100px;
 										padding: 0;
-										background-color: white;
+										background-color: #ffffff;
 									"
 								>
 									<img
@@ -355,12 +310,7 @@
 								<td style="background-color: #ffffff">
 									<div
 										class="copyright"
-										style="
-											margin-left: auto;
-											margin-right: auto;
-											width: 100%;
-											padding: 10px;
-										"
+										style="margin: 0 auto; width: 100%; padding: 10px"
 									>
 										<p
 											style="
@@ -374,7 +324,7 @@
 										</p>
 										<p
 											style="
-												margin-top: 12px;
+												margin: 12px auto;
 												text-align: center;
 												font-size: 0.75rem;
 												line-height: 4px;
