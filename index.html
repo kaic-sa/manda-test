@@ -26,16 +26,17 @@
 					margin: 0 auto 16px auto;
 				}
 				.col-sml img {
-					max-width: 260px;
-					width: 50%;
+					max-width: 250px;
 					height: auto;
-					border: #b33a3a 2px solid;
 				}
 				.quebra {
 					flex-direction: row;
 
 					flex-wrap: wrap;
 					justify-items: center;
+				}
+				.copyright {
+					word-break: break-all;
 				}
 			}
 		</style>
@@ -56,7 +57,7 @@
 						<table
 							role="presentation"
 							style="
-								width: 94%;
+								width: 100%;
 								max-width: 600px;
 								border: none;
 								border-spacing: 0;
@@ -68,7 +69,7 @@
 							"
 						>
 							<tr>
-								<td style="padding-top: 16px; background-color: white">
+								<td style="padding: 16px 0 0 0; background-color: white">
 									<img
 										src="./src/header_trends.png"
 										alt="Logo"
@@ -93,7 +94,10 @@
 										margin: 0 auto;
 									"
 								>
-									<a href="#" title="main_image_1"
+									<a
+										href="http://www.example.com/"
+										target="_blank"
+										title="main_image_1"
 										><img
 											src="./src/main_image_1.png"
 											alt=""
@@ -190,7 +194,10 @@
 											color: #363636;
 										"
 									>
-										<a href="" title="sub_image_1"
+										<a
+											href="http://www.example.com/"
+											target="_blank"
+											title="sub_image_1"
 											><img
 												src="./src/sub_image_1.png"
 												alt=""
@@ -242,7 +249,10 @@
 											color: #363636;
 										"
 									>
-										<a href="" title="sub_image_2"
+										<a
+											href="http://www.example.com/"
+											target="_blank"
+											title="sub_image_2"
 											><img
 												src="./src/sub_image_2.png"
 												alt=""
@@ -310,7 +320,13 @@
 								<td style="background-color: #ffffff">
 									<div
 										class="copyright"
-										style="margin: 0 auto; width: 100%; padding: 10px"
+										style="
+											margin: 0 auto;
+											width: 100%;
+											max-width: fit-content;
+											padding: 4px 10px 10px;
+											line-height: 4px;
+										"
 									>
 										<p
 											style="
@@ -322,16 +338,9 @@
 										>
 											Copyright ® Mandarin. Todos os direitos reservados
 										</p>
-										<p
-											style="
-												margin: 12px auto;
-												text-align: center;
-												font-size: 0.75rem;
-												line-height: 4px;
-											"
-										>
+										<p style="text-align: center; font-size: 0.75rem">
 											Caso não deseje mais receber nossos emails, por favor
-											<a href="#">clique aqui</a>.
+											<a style="line-height: 12px" href="#">clique aqui</a>.
 										</p>
 									</div>
 								</td>
